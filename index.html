@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVS Karthik Prasad | The Digital Cockpit</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+
+    <!-- Fonts: Inter (UI), JetBrains Mono (Code/Data), Italiana (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Italiana&display=swap"
+        rel="stylesheet">
+
+    <!-- Import Maps for Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body data-barba="wrapper">
+
+    <!-- Loading Sequence -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="tachometer">
+                <div class="needle"></div>
+                <div class="rpm-text">0 RPM</div>
+            </div>
+            <div class="system-status">INITIALIZING SYSTEMS...</div>
+        </div>
+    </div>
+
+    <!-- 3D Background Container -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Main Content Wrapper -->
+    <main data-barba="container" data-barba-namespace="home">
+
+        <!-- Navigation (HUD Style) -->
+        <nav class="hud-nav">
+            <div class="nav-left">
+                <span class="status-light"></span>
+                <span class="system-time" id="time-display">00:00:00</span>
+            </div>
+            <div class="nav-center">
+                <a href="#cockpit" class="nav-link active">COCKPIT</a>
+                <a href="#showroom" class="nav-link">SHOWROOM</a>
+                <a href="#garage" class="nav-link">GARAGE</a>
+            </div>
+            <div class="nav-right">
+                <button class="menu-btn" id="glovebox-toggle">DRIVER PROFILE</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section: The Cockpit -->
+        <section id="cockpit" class="section hero">
+            <div class="hero-content">
+                <h1 class="glitch-text" data-text="KARTHIK PRASAD">KARTHIK PRASAD</h1>
+                <div class="sub-hero">
+                    <span class="label">ROLE:</span> <span class="value">FULL STACK ENGINEER</span>
+                    <span class="separator">|</span>
+                    <span class="label">LOC:</span> <span class="value">INDIA</span>
+                </div>
+                <p class="mission-statement">Building the future, one pixel at a time.</p>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO IGNITE</span>
+                <div class="arrow-down"></div>
+            </div>
+        </section>
+
+        <!-- Showroom Section: Impact & Initiatives -->
+        <section id="showroom" class="section showroom-section">
+
+            <!-- Featured Initiatives (Grid) -->
+            <div class="showroom-header">
+                <h2>STRATEGIC INITIATIVES</h2>
+                <p>HIGH-IMPACT PROGRAMS DRIVING ORGANIZATIONAL CHANGE</p>
+            </div>
+
+            <div class="initiatives-grid">
+                <!-- Initiative 1: Agency Support -->
+                <a href="initiative-agency-support.html" class="project-card initiative featured">
+                    <div class="card-content">
+                        <span class="card-id">INIT_01</span>
+                        <h3>AGENCY SUPPORT</h3>
+                        <div class="card-stats">
+                            <span>50% FASTER</span>
+                            <span>50% GROWTH</span>
+                        </div>
+                        <p class="card-desc">Built the foundations of a new support wing to identify and partner with
+                            agencies.</p>
+                    </div>
+                    <div class="card-bg"></div>
+                </a>
+
+                <!-- Initiative 2: Support Bot -->
+                <a href="initiative-support-bot.html" class="project-card initiative featured">
+                    <div class="card-content">
+                        <span class="card-id">INIT_02</span>
+                        <h3>SUPPORT BOT</h3>
+                        <div class="card-stats">
+                            <span>40% RESOLUTION</span>
+                            <span>2x ENGAGEMENT</span>
+                        </div>
+                        <p class="card-desc">Personally managed the support chatbot and documentation to improve
+                            self-service.</p>
+                    </div>
+                    <div class="card-bg"></div>
+                </a>
+            </div>
+
+            <!-- Project Gallery (Horizontal Scroll) -->
+            <div class="gallery-header">
+                <h3>ENGINEERING PROJECTS</h3>
+                <p>TACTICAL SOLUTIONS & TOOLS</p>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-hint">
+                <span>SCROLL / DRAG</span>
+                <div class="arrow-right"></div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-track">
+
+                    <!-- Project 1: Agency ID -->
+                    <a href="project-agency-id.html" class="project-card">
+                        <div class="card-content">
+                            <span class="card-id">PROJ_01</span>
+                            <h3>AGENCY ID SYSTEM</h3>
+                            <div class="card-stats">
+                                <span>100% AUTO</span>
+                                <span>
+                                    &lt;1 MIN TIME</span>
+                            </div>
+                            <p class="card-desc">Automated agency identification & routing.</p>
+                        </div>
+                        <div class="card-bg"></div>
+                    </a>
+
+                    <!-- Project 2: Support Toolbox -->
+                    <a href="project-support-toolbox.html" class="project-card">
+                        <div class="card-content">
+                            <span class="card-id">PROJ_02</span>
+                            <h3>SUPPORT TOOLBOX</h3>
+                            <div class="card-stats">
+                                <span>
+                                    &lt;1 MIN DIAGNOSIS</span>
+                                <span>1-CLICK FIX</span>
+                            </div>
+                            <p class="card-desc">Chrome extension for rapid support.</p>
+                        </div>
+                        <div class="card-bg"></div>
+                    </a>
+
+                    <!-- Project 3: Free Trial Tool -->
+                    <a href="project-free-trial.html" class="project-card">
+                        <div class="card-content">
+                            <span class="card-id">PROJ_03</span>
+                            <h3>FREE TRIAL TOOL</h3>
+                            <div class="card-stats">
+                                <span>
+                                    &lt;1 MIN SETUP</span>
+                                <span>NO CODE</span>
+                            </div>
+                            <p class="card-desc">Democratized free trial access.</p>
+                        </div>
+                        <div class="card-bg"></div>
+                    </a>
+
+                    <!-- Project 4: Sentiment Analysis -->
+                    <a href="project-sentiment-analysis.html" class="project-card">
+                        <div class="card-content">
+                            <span class="card-id">PROJ_04</span>
+                            <h3>SENTIMENT ANALYSIS</h3>
+                            <div class="card-stats">
+                                <span>+50% REVIEWS</span>
+                                <span>REAL-TIME</span>
+                            </div>
+                            <p class="card-desc">NLP-based review lead generation.</p>
+                        </div>
+                        <div class="card-bg"></div>
+                    </a>
+
+                    <!-- Project 5: Proactive Leads -->
+                    <a href="project-proactive-leads.html" class="project-card">
+                        <div class="card-content">
+                            <span class="card-id">PROJ_05</span>
+                            <h3>PROACTIVE LEADS</h3>
+                            <div class="card-stats">
+                                <span>HIGH ENGAGEMENT</span>
+                                <span>AUTO GEN</span>
+                            </div>
+                            <p class="card-desc">Milestone-based review prompts.</p>
+                        </div>
+                        <div class="card-bg"></div>
+                    </a>
+
+                    <!-- Project 6: Churn Prediction -->
+                    <a href="project-churn-prediction.html" class="project-card">
+                        <div class="card-content">
+                            <span class="card-id">PROJ_06</span>
+                            <h3>CHURN PREDICTION</h3>
+                            <div class="card-stats">
+                                <span>50% REDUCTION</span>
+                                <span>PREDICTIVE</span>
+                            </div>
+                            <p class="card-desc">Pattern recognition for retention.</p>
+                        </div>
+                        <div class="card-bg"></div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 3: The Glovebox (Hidden Overlay) -->
+        <section id="glovebox" class="glovebox-overlay">
+            <div class="glovebox-header">
+                <h2>DRIVER PROFILE</h2>
+                <button class="close-btn" id="glovebox-close">CLOSE</button>
+            </div>
+            <div class="glovebox-content">
+
+                <!-- Module 1: The Garage (Tech Gear) -->
+                <div class="glovebox-module">
+                    <div class="module-header">
+                        <h3>THE GARAGE</h3>
+                        <p>MISSION CRITICAL HARDWARE</p>
+                    </div>
+
+                    <div class="garage-grid">
+                        <!-- Item 1 -->
+                        <div class="gear-card">
+                            <div class="gear-icon">🥽</div>
+                            <div class="gear-info">
+                                <span class="gear-type">SPATIAL COMPUTING</span>
+                                <h4>APPLE VISION PRO</h4>
+                                <span class="gear-status">ACTIVE</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="gear-card">
+                            <div class="gear-icon">💻</div>
+                            <div class="gear-info">
+                                <span class="gear-type">WORKSTATION</span>
+                                <h4>MACBOOK PRO 16" M4 MAX</h4>
+                                <span class="gear-status">DEPLOYED</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="gear-card">
+                            <div class="gear-icon">⌚</div>
+                            <div class="gear-info">
+                                <span class="gear-type">TELEMETRY</span>
+                                <h4>APPLE WATCH ULTRA</h4>
+                                <span class="gear-status">SYNCED</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="gear-card">
+                            <div class="gear-icon">🎧</div>
+                            <div class="gear-info">
+                                <span class="gear-type">AUDIO (FOCUS)</span>
+                                <h4>AIRPODS MAX</h4>
+                                <span class="gear-status">CONNECTED</span>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="gear-card">
+                            <div class="gear-icon">👂</div>
+                            <div class="gear-info">
+                                <span class="gear-type">AUDIO (OPEN)</span>
+                                <h4>NOTHING EAR (OPEN)</h4>
+                                <span class="gear-status">STANDBY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 2: The Library (Books) -->
+                <div class="glovebox-module">
+                    <div class="module-header">
+                        <h3>THE LIBRARY</h3>
+                        <p>OPERATING MANUALS & MENTAL MODELS</p>
+                    </div>
+
+                    <div class="library-grid">
+                        <!-- Book 1 -->
+                        <div class="book-card">
+                            <div class="book-spine" style="background: #ff4d4d;"></div>
+                            <div class="book-info">
+                                <h4>THE ONE THING</h4>
+                                <span class="book-author">GARY KELLER</span>
+                                <p class="book-desc">Focus is the ultimate driver of success.</p>
+                            </div>
+                        </div>
+
+                        <!-- Book 2 -->
+                        <div class="book-card">
+                            <div class="book-spine" style="background: #00e5ff;"></div>
+                            <div class="book-info">
+                                <h4>PSYCHO-CYBERNETICS</h4>
+                                <span class="book-author">MAXWELL MALTZ</span>
+                                <p class="book-desc">The self-image sets the limits of accomplishment.</p>
+                            </div>
+                        </div>
+
+                        <!-- Book 3 -->
+                        <div class="book-card">
+                            <div class="book-spine" style="background: #ffcc00;"></div>
+                            <div class="book-info">
+                                <h4>BHAGAVAD GITA</h4>
+                                <span class="book-author">KRISHNA</span>
+                                <p class="book-desc">The essence of Life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Module 3: The Studio (Music) -->
+                <div class="glovebox-module">
+                    <div class="module-header">
+                        <h3>THE STUDIO</h3>
+                        <p>SONIC ARCHITECTURE</p>
+                    </div>
+
+                    <div class="studio-grid">
+                        <div class="audio-card">
+                            <div class="waveform-visual">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                            <div class="audio-info">
+                                <h4>PRODUCTION SUITE</h4>
+                                <span class="audio-status">LOGIC PRO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subtle Footer (Porsche Reference) -->
+                <div class="glovebox-footer">
+                    <span class="code-ref">TARGET: 992 TURBO S</span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVS Karthik Prasad | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <!-- Preconnect to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Handjet:wght@400;700&family=Lilita+One&family=Passion+One&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation / Back to Top -->
+    <button id="back-to-top" aria-label="Back to top">
+        <a href="#intro">↑</a>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">Copied to clipboard!</div>
+
+    <!-- Hero Section -->
+    <header class="intro" id="intro">
+        <div class="image-bg"></div>
+        <div class="cover">
+            <p class="intro-greeting fade-in">Hai! I am</p>
+            <h1 id="intro-full-name" class="fade-in delay-1">P. Venkata Sai Karthikeya Prasad</h1>
+            <p class="intro-greeting fade-in delay-2">or simply,</p>
+            <h2 id="intro-short-name" class="fade-in delay-3">Karthik</h2>
+            <p id="intro-designation" class="intro-greeting fade-in delay-4">I am a Web Developer based in India</p>
+        </div>
+    </header>
+
+    <main class="bg-image">
+        <div class="wrapper">
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <h2 class="section-heading">About Me</h2>
+                <p class="section-subheading">(also, Resume)</p>
+
+                <div class="work-links">
+                    <a href="#" class="btn-link" download target="_blank">Download CV</a>
+                    <a href="https://github.com/PVSKarthikPrasad" class="btn-link" target="_blank">GitHub</a>
+                    <a href="https://codepen.io/PVSK-Prasad" class="btn-link" target="_blank">CodePen</a>
+                    <a href="https://www.linkedin.com/in/pvskarthikprasad/" class="btn-link"
+                        target="_blank">LinkedIn</a>
+                </div>
+
+                <p id="area-of-interest">Full Stack Developer</p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="content-section">
+                <div class="skills-container">
+                    <div class="main-skills card">
+                        <h3 class="small-heading">Main Skills</h3>
+                        <div class="all-main-skills" id="web-skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+
+                        <p id="currently-learning">Currently Learning:</p>
+                        <ul class="learning-list">
+                            <li>Advanced CSS</li>
+                            <li>Javascript</li>
+                            <li>Blender 3D Modelling</li>
+                        </ul>
+                    </div>
+
+                    <div class="additional-skills card">
+                        <h3 class="small-heading">Additional Skills</h3>
+                        <ul class="skills-list">
+                            <li>Problem Solving</li>
+                            <li>Avid and Curious Learner</li>
+                            <li>Communication & Presentation</li>
+                            <li>Team Player</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects/Activities Section -->
+            <section id="projects" class="content-section">
+                <h2 class="section-heading">Activities</h2>
+                <div class="activities-grid">
+                    <article class="activity card" id="eyrc">
+                        <h3 class="activity-heading">e-YRC 2021 - Berryminator</h3>
+                        <p class="activity-subheading">Conducted by IIT Bombay</p>
+                        <div class="tags">
+                            <span class="tag">#Coding</span>
+                            <span class="tag">#Software</span>
+                        </div>
+                        <p class="activity-desc">Worked on creating the software for a robot that automatically picks
+                            full-grown berries from a crop field.</p>
+                        <p class="learning-outcomes">Learning Outcomes:</p>
+                        <ul class="outcomes-list">
+                            <li>Python Programming</li>
+                            <li>Basic Computer Vision</li>
+                            <li>Robot Operating System</li>
+                            <li>Team Collaboration</li>
+                        </ul>
+                    </article>
+
+                    <article class="activity card" id="ideathon">
+                        <h3 class="activity-heading">2nd Place in Ideathon</h3>
+                        <p class="activity-subheading">Protoconvention 2.0 by SRM University</p>
+                        <div class="tags">
+                            <span class="tag">#Entrepreneurship</span>
+                            <span class="tag">#Startup</span>
+                        </div>
+                        <p class="activity-desc">A competition where various teams compete with their start-up ideas.
+                            Evaluated based on uniqueness, impact, and product clarity.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Languages Section -->
+            <section id="languages" class="content-section">
+                <h2 class="section-heading" style="font-size: 4rem;">Languages Known</h2>
+                <div class="table-container card">
+                    <table id="languages-known">
+                        <thead>
+                            <tr id="headings">
+                                <th>Language</th>
+                                <th>Speaking</th>
+                                <th>Reading</th>
+                                <th>Writing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>English</th>
+                                <td class="fluent">Fluent</td>
+                                <td class="proficient">Proficient</td>
+                                <td class="proficient">Proficient</td>
+                            </tr>
+                            <tr>
+                                <th>Hindi</th>
+                                <td class="good">Good</td>
+                                <td class="proficient">Proficient</td>
+                                <td class="novice">Novice</td>
+                            </tr>
+                            <tr>
+                                <th>Telugu</th>
+                                <td class="fluent">Fluent</td>
+                                <td class="novice">Novice</td>
+                                <td class="nope">x</td>
+                            </tr>
+                            <tr>
+                                <th>Tamil</th>
+                                <td class="fluent">Fluent</td>
+                                <td class="novice">Novice</td>
+                                <td class="nope">x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <footer id="contact" class="content-section">
+                <div class="contact-container card">
+                    <h2 id="contact-heading">Contact Me</h2>
+                    <div class="email-wrapper" onclick="copyToClipboard('pvskarthik.prasad@gmail.com')">
+                        <p id="email">pvskarthik.prasad@gmail.com</p>
+                        <span class="copy-hint">(Click to Copy)</span>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="filler"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

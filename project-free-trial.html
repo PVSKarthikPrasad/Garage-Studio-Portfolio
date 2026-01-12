@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Trial Tool | Karthik Prasad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Italiana&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="project-page" data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="project">
+        <nav class="hud-nav">
+            <div class="nav-left">
+                <a href="index.html#showroom" class="back-link">← RETURN TO COCKPIT</a>
+            </div>
+            <div class="nav-right">
+                <span class="project-id">PROJECT_03</span>
+            </div>
+        </nav>
+
+        <header class="project-hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="project-meta">
+                <h1 class="project-title glitch-text" data-text="FREE TRIAL TOOL">FREE TRIAL TOOL</h1>
+                <p class="project-pitch">Democratized the free trial setup process, reducing technical dependency and
+                    setup time.</p>
+            </div>
+        </header>
+
+        <section class="impact-dashboard">
+            <div class="stat-card">
+                <span class="stat-value">
+                    &lt;1min</span>
+                <span class="stat-label">SETUP TIME (WAS 30MIN)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">TEAM ACCESSIBILITY</span>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="detail-block problem">
+                <h2>THE CHALLENGE</h2>
+                <p>Setting up custom free trials required technical API calls, limiting the task to engineers and taking
+                    up to 30 minutes per request.</p>
+            </div>
+
+            <div class="detail-block solution">
+                <h2>THE SOLUTION</h2>
+                <p>I built a simple form-based tool using n8n that automates the API calls. This reduced setup time to
+                    under a minute and allowed non-technical team members to grant trials independently.</p>
+            </div>
+
+            <div class="detail-block stack">
+                <h2>TECH STACK</h2>
+                <div class="stack-grid">
+                    <span class="tech-tag">n8n</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">Intercom</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <h2>VISUALS</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item placeholder">TOOL UI</div>
+                <div class="gallery-item placeholder">N8N WORKFLOW</div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

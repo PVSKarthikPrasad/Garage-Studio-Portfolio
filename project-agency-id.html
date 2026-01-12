@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Identification System | Karthik Prasad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Italiana&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="project-page" data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="project">
+        <nav class="hud-nav">
+            <div class="nav-left">
+                <a href="index.html#showroom" class="back-link">← RETURN TO COCKPIT</a>
+            </div>
+            <div class="nav-right">
+                <span class="project-id">PROJECT_01</span>
+            </div>
+        </nav>
+
+        <header class="project-hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="project-meta">
+                <h1 class="project-title glitch-text" data-text="AGENCY ID SYSTEM">AGENCY ID SYSTEM</h1>
+                <p class="project-pitch">Fully automated identification of agencies from new installs, prioritizing
+                    high-value partners.</p>
+            </div>
+        </header>
+
+        <section class="impact-dashboard">
+            <div class="stat-card">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">AUTOMATED (WAS 10HRS/WEEK)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">
+                    &lt;1min</span>
+                <span class="stat-label">IDENTIFICATION TIME</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">ZERO</span>
+                <span class="stat-label">MISSED OPPORTUNITIES</span>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="detail-block problem">
+                <h2>THE CHALLENGE</h2>
+                <p>Identifying agencies among new installs was a manual task taking 10+ hours a week. This delay meant
+                    missed opportunities for personalized outreach and incorrect ticket routing.</p>
+            </div>
+
+            <div class="detail-block solution">
+                <h2>THE SOLUTION</h2>
+                <p>I built an automated system using n8n and Gemini that scans new installs, identifies agencies, scopes
+                    their size, and routes them to a dedicated support queue. This freed up time for high-value
+                    partnership pitches.</p>
+            </div>
+
+            <div class="detail-block stack">
+                <h2>TECH STACK</h2>
+                <div class="stack-grid">
+                    <span class="tech-tag">n8n</span>
+                    <span class="tech-tag">Gemini AI</span>
+                    <span class="tech-tag">Intercom API</span>
+                    <span class="tech-tag">Webhooks</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <h2>VISUALS</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item placeholder">WORKFLOW DIAGRAM</div>
+                <div class="gallery-item placeholder">GEMINI PROMPT DEMO</div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
